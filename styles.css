@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --darkgray: hsl(0, 0%, 59%);
+}
+
+
+body{
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 18px;
+    background-color: hsl(185, 75%, 39%); 
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    overflow:hidden;
+
+}
+ul{
+    list-style-type: none;
+}
+img{
+    max-width: 100%;
+    
+}
+.circles .c1,
+.circles .c2{
+    position: absolute;
+    width: 900px;
+    height: auto;
+    z-index: 0;
+
+}
+.c1{
+    top: -8rem;
+    left: -8rem;
+}
+.c2{
+    bottom: -123px;
+    right: -185px;
+
+}
+.top_img{
+    border-radius: 20px 20px 0 0;
+    background-image: url('./images/bg-pattern-card.svg');
+    background-size: cover;
+    height: 130px;
+}
+.bg__image{
+    background-color: var(--dark-cyan);
+    background:url('./images/bg-pattern-top.svg') no-repeat center/cover ;
+}
+.container{
+    
+    text-align: center;
+    background-color:#ffff;
+    margin: 15px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px hsl(228, 45%, 44%, 0.15);
+    position: relative;
+    top: 50%;
+    transform: translateY(30%);
+   
+}
+.container ul{
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    border-top: 1px solid var(--darkgray);
+}
+.container li{
+    margin: 0 1rem 0 1rem;
+}
+.container li span{
+    font-size: 12px;
+    color: hsl(0, 0%, 59%);
+    font-weight: 300;
+    letter-spacing: 0.08rem;
+}
+.container.avatar{
+
+    background-color: hsl(229, 23%, 23%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px 30px 30px;
+}
+
+.container .avatar h3{
+    color:hsl(229, 23%, 23%);
+    margin-bottom: 15px;
+}
+
+.container .avatar span{
+    color: hsl(227, 10%, 46%);
+    font-weight: 300;
+    
+}
+.info{
+    padding: 0px 30px 30px 30px;
+}
+.container .avatar .img-holder{
+
+    margin: -45px auto 20px auto;
+    width: 7rem;
+    border:5px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.container .avatar .img-holder img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.attribution { font-size: 11px; text-align: center; color: white; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 420px) {
+    .container{
+        width: 400px ;
+        margin: 0 auto 1rem;
+
+    }
+    body{
+        top: 50%;
+        transform: translateY(10%);
+        
+    }
+    .container ul{
+        padding: 2rem 2px;
+    }
+    .circles .c1,
+    .circles .c2{
+    width: 1200px;
+
+}
+    .c1{
+        top: -29rem;
+        left: -16em;
+    }
+    .c2{
+        bottom: -29rem;
+        right: -16em;
+    }
+   
+}
